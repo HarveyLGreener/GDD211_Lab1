@@ -64,7 +64,7 @@ public class PaceControls : MonoBehaviour
                 State = StateCheck.DEAD;
             }
             anim.SetBool("started", true);
-            if (Input.GetAxis("Jump")>0)
+            if (Input.GetKeyDown("space") || Input.GetKeyDown("w"))
             {
                 StartCoroutine(Jump());
             }
